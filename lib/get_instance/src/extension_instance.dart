@@ -248,11 +248,11 @@ extension Inst on GetInterface {
     final i = _singl[key]!.getDependency() as S;
     if (i is GetLifeCycleMixin) {
       i.onStart();
-      if (tag == null) {
-        Get.log('Instance "$S" has been initialized');
-      } else {
-        Get.log('Instance "$S" with tag "$tag" has been initialized');
-      }
+      // if (tag == null) {
+      //   Get.log('Instance "$S" has been initialized');
+      // } else {
+      //   Get.log('Instance "$S" with tag "$tag" has been initialized');
+      // }
       if (!_singl[key]!.isSingleton!) {
         RouterReportManager.instance.appendRouteByCreate(i);
       }
@@ -542,11 +542,11 @@ class _InstanceBuilderFactory<S> {
   });
 
   void _showInitLog() {
-    if (tag == null) {
-      Get.log('Instance "$S" has been created');
-    } else {
-      Get.log('Instance "$S" has been created with tag "$tag"');
-    }
+    // if (tag == null) {
+    //   Get.log('Instance "$S" has been created');
+    // } else {
+    //   Get.log('Instance "$S" has been created with tag "$tag"');
+    // }
   }
 
   /// Gets the actual instance by it's [builderFunc] or the persisted instance.
