@@ -51,7 +51,7 @@ class GetMaterialApp extends StatelessWidget {
   final VoidCallback? onInit;
   final VoidCallback? onReady;
   final VoidCallback? onDispose;
-  final bool? enableLog;
+  final bool? enableLog = false;
   final LogWriterCallback? logWriterCallback;
   final bool? popGesture;
   final SmartManagement smartManagement;
@@ -113,7 +113,6 @@ class GetMaterialApp extends StatelessWidget {
     this.defaultTransition,
     this.getPages,
     this.opaqueRoute,
-    this.enableLog = kDebugMode,
     this.logWriterCallback,
     this.popGesture,
     this.transitionDuration,
@@ -174,7 +173,6 @@ class GetMaterialApp extends StatelessWidget {
     this.onInit,
     this.onReady,
     this.onDispose,
-    this.enableLog = kDebugMode,
     this.logWriterCallback,
     this.popGesture,
     this.smartManagement = SmartManagement.full,
@@ -202,7 +200,6 @@ class GetMaterialApp extends StatelessWidget {
         customTransition: customTransition,
         defaultGlobalState: defaultGlobalState,
         defaultTransition: defaultTransition,
-        enableLog: enableLog,
         fallbackLocale: fallbackLocale,
         getPages: getPages,
         home: home,

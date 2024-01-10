@@ -10,7 +10,7 @@ class ConfigData {
   final VoidCallback? onInit;
   final VoidCallback? onReady;
   final VoidCallback? onDispose;
-  final bool? enableLog;
+  final bool? enableLog = false;
   final LogWriterCallback? logWriterCallback;
   final SmartManagement smartManagement;
   final List<Bind> binds;
@@ -52,7 +52,6 @@ class ConfigData {
     required this.onInit,
     required this.onReady,
     required this.onDispose,
-    required this.enableLog,
     required this.logWriterCallback,
     required this.smartManagement,
     required this.binds,
@@ -138,7 +137,6 @@ class ConfigData {
       onInit: onInit ?? this.onInit,
       onReady: onReady ?? this.onReady,
       onDispose: onDispose ?? this.onDispose,
-      enableLog: enableLog ?? this.enableLog,
       logWriterCallback: logWriterCallback ?? this.logWriterCallback,
       smartManagement: smartManagement ?? this.smartManagement,
       binds: binds ?? this.binds,

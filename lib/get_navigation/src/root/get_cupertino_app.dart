@@ -195,7 +195,6 @@ class GetCupertinoApp extends StatelessWidget {
         customTransition: customTransition,
         defaultGlobalState: defaultGlobalState,
         defaultTransition: defaultTransition,
-        enableLog: enableLog,
         fallbackLocale: fallbackLocale,
         getPages: getPages,
         home: home,
