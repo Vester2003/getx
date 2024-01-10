@@ -542,11 +542,11 @@ class _InstanceBuilderFactory<S> {
   });
 
   void _showInitLog() {
-    if (tag == null) {
-      Get.log('Instance "$S" has been created');
-    } else {
-      Get.log('Instance "$S" has been created with tag "$tag"');
-    }
+    // if (tag == null) {
+    //   Get.log('Instance "$S" has been created');
+    // } else {
+    //   Get.log('Instance "$S" has been created with tag "$tag"');
+    // }
   }
 
   /// Gets the actual instance by it's [builderFunc] or the persisted instance.
