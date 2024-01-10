@@ -35,6 +35,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      enableLog: false,
       getPages: [
         GetPage(
             participatesInRootNavigator: true,
